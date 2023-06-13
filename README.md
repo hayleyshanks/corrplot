@@ -3,6 +3,9 @@
 [![CRAN Status](https://www.r-pkg.org/badges/version/corrplot)](https://cran.r-project.org/package=corrplot)
 [![CRAN Downloads](https://cranlogs.r-pkg.org/badges/corrplot)](https://www.r-pkg.org/pkg/corrplot)
 
+## Edits to coorplot package:
+Updated the corrplot.R function to accept a vector of sizes for circles in the correlation plot. This allows for circles to be scaled proportionally to the p value of the correlation. Edits based on johannes-titz/corrplot (https://github.com/johannes-titz/corrplot/commit/9362f6a7c2fda794b5ef8895b77f0b2ff979092a)
+
 ## Summary
 
 R package **corrplot** provides a visual exploratory tool on correlation matrix that 
