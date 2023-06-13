@@ -299,6 +299,7 @@ corrplot = function(corr,
   lowCI.mat = NULL, uppCI.mat = NULL,
   na.label = '?', na.label.col = 'black',
   win.asp = 1,
+  size_vector = NULL,
   ...)
 {
 
@@ -670,7 +671,7 @@ corrplot = function(corr,
   ## circle
   if (method == 'circle' && plotCI == 'n') {
     symbols(Pos, add = TRUE,  inches = FALSE,
-            circles = asp_rescale_factor * 0.9 * abs(DAT) ^ 0.5 / 2,
+            circles = asp_rescale_factor * 0.9 * size_vector ^ 0.5 / 2,
             fg = col.border, bg = col.fill)
   }
 
